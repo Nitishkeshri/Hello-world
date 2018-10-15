@@ -8,12 +8,13 @@ public class LeapYear{
     System.out.print("Enter a Year : ");
     int year = scan.nextInt();
 
-    if (year % 4 == 0 && year % 100 != 0) {
+    if (year % 4 == 0 && year % 100 != 0 || year % 400==0) 
+    {
       System.out.println("A leap year");
-    } else if (year % 400 == 0) {
-      System.out.println("A leap year");
-    } else {
+    } 
+     else 
+     {
       System.out.println("Not a leap year");
-    }
+     }
   }
 }
