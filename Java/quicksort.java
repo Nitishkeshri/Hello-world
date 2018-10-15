@@ -1,3 +1,4 @@
+import java.util.*;
 class QuickSort 
 { 
    
@@ -57,10 +58,15 @@ class QuickSort
     // Driver program 
     public static void main(String args[]) 
     { 
-        int arr[] = {11, 7, 8, 9, 1, 5}; 
-        int n = arr.length; 
-  
-        QuickSort ob = new QuickSort(); 
+        int n;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter n value");
+       n=sc.nextInt();
+       int arr[] =new int[n];
+       System.out.println("enter array values");
+       for(int i=0;i<n;i++)
+         arr[i]=sc.nextInt();
+         QuickSort ob = new QuickSort(); 
         ob.sort(arr, 0, n-1); 
   
         System.out.println("sorted array"); 
