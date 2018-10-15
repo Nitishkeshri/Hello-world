@@ -1,7 +1,7 @@
 #include<stdio.h>
  
 int main() {
-   float amount, rate, time, si;
+   unsigned float amount, rate, time, si;
  
    printf("\nEnter Principal Amount : ");
    scanf("%f", &amount);
